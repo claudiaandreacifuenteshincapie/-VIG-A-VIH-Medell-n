@@ -1,0 +1,54 @@
+{
+  "territorio": {
+    "p0_pct": 9.512640083398487,
+    "chi2": 27.76814038653511,
+    "gl": 19,
+    "p_chi2": 0.08799353248967827
+  },
+  "regresion": {
+    "lrt_chi2": 22.64427153446286,
+    "lrt_gl": 19,
+    "p_lrt": 0.25337370636076467,
+    "comuna_ref": "10 La Candelaria",
+    "n_modelo_B": 11509
+  },
+  "modelo": {
+    "n_entrenamiento": 7249,
+    "eventos_entrenamiento": 1038,
+    "n_prueba": 7337,
+    "eventos_prueba": 453,
+    "n_parametros": 40,
+    "eventos_por_parametro": 25.95,
+    "prevalencia_entrenamiento": 0.143192164436474,
+    "prevalencia_prueba": 0.06174185634455499,
+    "C_elegido": 1.0,
+    "hgb_params": {
+      "max_iter": 100,
+      "min_samples_leaf": 20
+    },
+    "delta_auc": 0.041691466858132284,
+    "delta_auc_inf": 0.02273210143818894,
+    "delta_auc_sup": 0.05963108608831279,
+    "delta_pr_auc": 0.036808199471891186,
+    "delta_pr_inf": 0.018599155366479696,
+    "delta_pr_sup": 0.0575684457870387,
+    "anios_entrenamiento": "2012-2018",
+    "anios_prueba": "2019-2023"
+  },
+  "calidad": {
+    "filas_crudas": 15470,
+    "personas_unicas": 14881,
+    "personas_con_renotificacion": 569,
+    "poblacion_analisis": 14586,
+    "excluidos_no_residentes_o_sin_estadio": 295,
+    "fecha_min_notificacion": "2012-01-02",
+    "fecha_max_notificacion": "2023-07-19",
+    "anio_parcial": 2023,
+    "pct_comuna_sin_informacion": 21.1,
+    "fechas_nacimiento_invalidas_antes_1910": 1,
+    "edades_fuera_de_rango_0_105": 3,
+    "retrasos_resultado_notif_negativos": 475,
+    "anio_epi_distinto_del_anio_calendario": 269,
+    "generado": "2026-10-23T19:14:21"
+  }
+}

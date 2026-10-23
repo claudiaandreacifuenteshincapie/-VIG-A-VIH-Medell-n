@@ -1,0 +1,22 @@
+{
+  "notificaciones": 15470,
+  "personas": 14881,
+  "poblacion_analisis": 14586,
+  "pct_tardio_global": 10.222130810366105,
+  "pct_tardio_primer_anio": 22.13622291021672,
+  "primer_anio": 2012,
+  "pct_tardio_ultimo_anio_completo": 5.99208592425099,
+  "ultimo_anio_completo": 2022,
+  "pct_mujeres": 15.172082819141645,
+  "mediana_edad": 30.0,
+  "pct_sin_comuna": 21.1,
+  "fecha_min": "2012-01-02",
+  "fecha_max": "2023-07-19",
+  "anio_parcial": 2023,
+  "pct_personas_renotificadas": 3.823667764263154,
+  "pct_hospitalizados_vih": 14.417716685757922,
+  "pct_hospitalizados_sida": 65.86538461538461,
+  "pct_con_oportunista_sida": 90.625,
+  "pct_con_oportunista_vih": 0.15273004963726614,
+  "mediana_dias_consulta_notif": 3.0
+}
