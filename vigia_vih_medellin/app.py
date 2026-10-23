@@ -1,4 +1,4 @@
-"""Dashboard VIGÍA-VIH Medellín — lee SOLO tablas agregadas de data/gold (nunca registros individuales).
+"""Dashboard VIGÍA-VIH — lee SOLO tablas agregadas de data/gold (nunca registros individuales).
 Ejecutar:  streamlit run app.py        (antes:  python run_pipeline.py)
 """
 import json
