@@ -4,7 +4,7 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parent
 
 # --- Identidad del proyecto (el nombre es un NOMBRE DE TRABAJO propuesto; ver docs/README) ---
-NOMBRE = "VIGÍA-VIH Medellín"
+NOMBRE = "VIGÍA-VIH"
 SUBTITULO = ("Presentación avanzada del VIH al momento de la notificación · "
              "SIVIGILA evento 850 · Medellín")
 
