@@ -1,0 +1,16 @@
+{
+  "filas_crudas": 15470,
+  "personas_unicas": 14881,
+  "personas_con_renotificacion": 569,
+  "poblacion_analisis": 14586,
+  "excluidos_no_residentes_o_sin_estadio": 295,
+  "fecha_min_notificacion": "2012-01-02",
+  "fecha_max_notificacion": "2023-07-19",
+  "anio_parcial": 2023,
+  "pct_comuna_sin_informacion": 21.1,
+  "fechas_nacimiento_invalidas_antes_1910": 1,
+  "edades_fuera_de_rango_0_105": 3,
+  "retrasos_resultado_notif_negativos": 475,
+  "anio_epi_distinto_del_anio_calendario": 269,
+  "generado": "2026-10-29T16:25:59"
+}

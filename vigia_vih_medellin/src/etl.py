@@ -149,11 +149,14 @@ def reporte_calidad(raw: pd.DataFrame, silver: pd.DataFrame, pob: pd.DataFrame) 
 def ejecutar_bronze_silver(ruta=None):
     ruta = ruta or config.RAW_CSV
     raw = leer_crudo(ruta)
+    getattr(config, "DIR_BRONZE", config.DIR_SILVER).mkdir(parents=True, exist_ok=True)
     config.DIR_SILVER.mkdir(parents=True, exist_ok=True)
     meta = {"archivo": ruta.name if hasattr(ruta, "name") else str(ruta),
             "sha256": sha256_archivo(ruta), "n_filas": int(len(raw)), "n_columnas": int(raw.shape[1]),
             "fecha_ingesta": datetime.now().isoformat(timespec="seconds"),
             "aviso": "Datos reales de vigilancia (SIVIGILA). Contienen cuasi-identificadores: no publicar."}
+    if hasattr(config, "DIR_BRONZE"):
+        (config.DIR_BRONZE / "_metadata_bronze.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
     (config.DIR_SILVER / "_metadata_bronze.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
     silver = construir_silver(raw)
     pob = poblacion_analisis(silver)

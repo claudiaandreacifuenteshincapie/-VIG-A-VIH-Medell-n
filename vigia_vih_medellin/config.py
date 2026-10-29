@@ -8,10 +8,16 @@ NOMBRE = "VIGÍA-VIH"
 SUBTITULO = ("Presentación avanzada del VIH al momento de la notificación · "
              "SIVIGILA evento 850 · Medellín")
 
-# --- Rutas ---
-RAW_CSV = BASE / "data" / "landing" / "sivigila_vih.csv"
+# --- Rutas Arquitectura Medallion (Bronze -> Silver -> Gold) ---
+DIR_BRONZE = BASE / "data" / "bronze"
 DIR_SILVER = BASE / "data" / "silver"
 DIR_GOLD = BASE / "data" / "gold"
+DIR_NOTEBOOKS = BASE / "notebooks"
+
+# Soporte nativo para data/bronze/sivigila_vih.csv con fallback retrocompatible a data/landing/
+RAW_CSV = (DIR_BRONZE / "sivigila_vih.csv"
+           if (DIR_BRONZE / "sivigila_vih.csv").exists()
+           else BASE / "data" / "landing" / "sivigila_vih.csv")
 
 # --- Parámetros analíticos ---
 SEED = 2026

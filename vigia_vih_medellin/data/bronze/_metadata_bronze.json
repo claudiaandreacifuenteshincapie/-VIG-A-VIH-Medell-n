@@ -1,0 +1,8 @@
+{
+  "archivo": "sivigila_vih.csv",
+  "sha256": "ace954c06eeb0a52d1054792a0fb1ff5c74309b747fd06b2062c4dc13df9f00c",
+  "n_filas": 15470,
+  "n_columnas": 116,
+  "fecha_ingesta": "2026-10-29T16:25:58",
+  "aviso": "Datos reales de vigilancia (SIVIGILA). Contienen cuasi-identificadores: no publicar."
+}
