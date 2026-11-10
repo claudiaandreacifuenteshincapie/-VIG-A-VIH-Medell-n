@@ -424,16 +424,6 @@ with tabs[6]:
             st.markdown(f"*Pregunta:* {pregunta}")
             st.write(lectura)
             st.caption("Los cálculos detallados se conservan en los archivos de resultados del proyecto; aquí se muestra su significado en lenguaje sencillo.")
-    st.subheader("Comparación con un estudio realizado en Nigeria")
-    st.caption("La siguiente tabla compara las tareas que se hicieron en los dos estudios. No significa que hayan estudiado el mismo problema de salud: el estudio de Nigeria analizó interrupciones del tratamiento y este tablero revisa la etapa registrada al notificar el VIH en Medellín. Una interrupción del tratamiento es dejar de recibir los medicamentos durante el periodo definido por ese estudio.")
-    comparacion = pd.DataFrame([
-        ["Definir qué situación se quería estudiar", "Personas que dejaron de recibir medicamentos por más de 28 días; el estudio reportó 33,7 %.", "Personas cuya primera notificación ya registraba SIDA o muerte."],
-        ["Revisar si la información estaba completa y era coherente", "Se identificaron datos incompletos o inconsistentes en los registros clínicos electrónicos.", "Se revisaron datos faltantes, notificaciones repetidas y fechas o valores que requerían comprobación."],
-        ["Comparar métodos para reconocer patrones", "Se compararon métodos estadísticos y programas automatizados; una parte de las personas se usó para construirlos y otra parte distinta para comprobarlos.", "Se compararon métodos estadísticos y programas automatizados; se construyeron con años anteriores y se comprobaron con años posteriores."],
-        ["Estudiar quién podría interrumpir el tratamiento", "Fue posible porque se contaba con fechas de entrega de medicamentos.", "No se estudió: SIVIGILA no contiene el historial de entrega de medicamentos."],
-    ], columns=["Tarea", "Estudio de Nigeria", "VIGÍA-VIH Medellín"])
-    st.dataframe(comparacion, use_container_width=True, hide_index=True)
-    st.caption("En otras palabras: ambos trabajos revisaron información real, comprobaron su calidad y compararon métodos para encontrar patrones. Pero sus resultados y las decisiones que podrían apoyar son diferentes.")
     st.subheader("Qué aspectos limitan la interpretación")
     st.markdown("- *Los registros no son todos los casos de la ciudad.* El tablero cuenta las notificaciones que llegaron al sistema y cumplen los criterios del estudio. Como no incluye un total de habitantes con el que comparar, no permite calcular qué proporción de toda la población de Medellín tiene VIH.\n"
                 "- *La etapa avanzada es una aproximación.* Se considera que una persona estaba en etapa avanzada cuando su primera notificación ya indicaba SIDA o muerte. No se cuenta con resultados de CD4 ni con la fecha de infección para precisar cuándo ocurrió el contagio o establecer por completo si hubo diagnóstico tardío.\n"
